@@ -16,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <h1>Phan Thanh Bình</h1>
+      <p>Xin chao tat ca moi nguoi</p>
       <Header></Header>
       <Sidebar></Sidebar>
       <Button></Button>
