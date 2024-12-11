@@ -1,0 +1,22 @@
++Cài jsx
+++ npx create-react-app <tên app>
++Không hiểu sao nhưng mà mỗi lần cài jsx xong là phải cài thêm cái này
+++ npm install web-vitals
+
++Cài Tailwind
+++ npm install -D tailwindcss postcss autoprefixer 
++Khởi tạo tailwindcss
+++ npx tailwindcss init -p  
++Cấu hình tailwindcss
+++ mở file tailwind.config.js
+++ Thêm đoạn này vào content:|| "./src/**/*.{js,jsx,ts,tsx}", // bao gồm các file trong thư mục src ||
++Cài tailwind vào css
+++ Xóa tất cả và thêm 3 đoạn mã dưới vào file index.css
+@tailwind base;  
+@tailwind components;  
+@tailwind utilities;  
+
+Sửa lỗi liên quan tới babel vì bạn không sử dụng nó nên nó gào lên, hãy thêm nó trong package.json bằng cách sử dụng câu lệnh sau:
+++ npm install --save-dev @babel/plugin-proposal-private-property-in-object
+sau khi đã cài tìm đến nó trong package.json, tìm devdependencies và xem cái ở dưới đã nằm trong chưa
+++ @babel/plugin-proposal-private-property-in-object
